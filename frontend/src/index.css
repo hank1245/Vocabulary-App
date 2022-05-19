@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-color: #b2bec3;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 60px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #777;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.heading p {
+  color: #828282;
+}
+
+.form,
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
+
+
+.wordheader {
+  position: relative;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.wordheader .menu {
+margin-bottom: 20px;
+}
+
+
+.wordheader .link {
+  border: 1px solid #333;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #efefef;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+.wordheader .del_btn:hover {
+  background-color: firebrick;
+  color: white;
+}
+
+.list_day {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list_day li {
+  flex: 25% 0 0;
+  box-sizing: border-box;
+  padding: 10px;
+  min-width: 120px;
+}
+
+.list_day a {
+  display: block;
+  padding: 20px 0;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  background-color: dodgerblue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table td {
+  width: 25%;
+  height: 70px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 26px;
+}
+
+table td:first-child {
+  width: 10%;
+}
+
+.off td {
+  background: #eee;
+  color: #ccc;
+}
+
+.btn_del {
+  margin-left: 10px;
+  color: #fff;
+  background-color: firebrick;
+}
+
+button {
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border: 0 none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+@media (max-width: 710px) {
+  button {
+    padding: 7px;
+  }  
+}
+
+.input_area {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.input_area input {
+  height: 30px;
+  font-size: 1.5rem;
+}
+.input_area label {
+  margin-bottom: 5px;
+}
+
+.input_area select {
+  height: 35px;
+  font-size: 1.5rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.day_shift {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.day_shift svg {
+  position: relative;
+  top: 5px;
+}
+
+.click_effect {
+  box-shadow: 1px 2px 2px black;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.click_effect:active {
+  margin-left: 5px;
+  margin-top: 5px;
+  box-shadow: none;
+}
+
